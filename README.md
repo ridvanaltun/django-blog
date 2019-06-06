@@ -26,6 +26,7 @@ If you want create a new database follow this directions:
 - Then you can type codes below to terminal:
 ```console
 $ rm -rf db.sqlite3
+$ rm -rf media
 $ python manage.py makemigrations
 $ python manage.py migrate
 $ python manage.py createsuperuser
