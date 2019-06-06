@@ -1,0 +1,20 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block headerTitle %}Post{% endblock headerTitle %}
+
+{% block content %}
+  <div>
+    <p>{{blog.title}}</p>
+    <p>{{blog.created_date}}</p>
+    <!-- Preview Image -->
+    {% if blog.thumbnail %}
+      <a href="#"><img class="img-fluid rounded" src="{{blogs.thumbnail.url}}" alt=""></a>
+    {% endif %}
+  </div>
+
+  <div>
+    <p>{{blog.content}}</p>
+  </div>
+
+  <button onclick="history.back()" class="btn btn-success">Back</button>
+{% endblock content %}
